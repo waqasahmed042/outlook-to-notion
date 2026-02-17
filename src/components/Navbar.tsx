@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import outlook_to_notion from "@/assets/outlook-to-notion.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -19,9 +20,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-semibold text-lg text-foreground">
-          <div className="gradient-primary flex h-8 w-8 items-center justify-center rounded-lg text-primary-foreground text-sm font-bold">
-            O→N
-          </div>
+          <img src={outlook_to_notion} alt="Outlook to Notion" className="h-8 w-8" />
           <span>Outlook to Notion</span>
         </Link>
 
@@ -31,11 +30,10 @@ const Navbar = () => {
             <Link
               key={l.to}
               to={l.to}
-              className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                location.pathname === l.to
-                  ? "bg-accent text-accent-foreground"
-                  : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-              }`}
+              className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${location.pathname === l.to
+                ? "bg-accent text-accent-foreground"
+                : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                }`}
             >
               {l.label}
             </Link>
@@ -68,11 +66,10 @@ const Navbar = () => {
                   key={l.to}
                   to={l.to}
                   onClick={() => setOpen(false)}
-                  className={`rounded-md px-3 py-2 text-sm font-medium ${
-                    location.pathname === l.to
-                      ? "bg-accent text-accent-foreground"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
+                  className={`rounded-md px-3 py-2 text-sm font-medium ${location.pathname === l.to
+                    ? "bg-accent text-accent-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                    }`}
                 >
                   {l.label}
                 </Link>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import outlook_to_notion from "../assets/outlook-to-notion.png";
 
 const Footer = () => (
   <footer className="border-t border-border bg-surface-subtle">
@@ -6,9 +7,7 @@ const Footer = () => (
       <div className="grid gap-8 md:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-2 font-semibold text-foreground mb-3">
-            <div className="gradient-primary flex h-7 w-7 items-center justify-center rounded-lg text-primary-foreground text-xs font-bold">
-              O→N
-            </div>
+            <img src={outlook_to_notion} alt="Outlook to Notion" className="h-8 w-8" />
             Outlook to Notion
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed">
@@ -37,8 +36,8 @@ const Footer = () => (
           <h4 className="font-medium text-foreground mb-3 text-sm">Contact</h4>
           <div className="flex flex-col gap-2">
             <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Form</Link>
-            <a href="mailto:support@outlooktonotion.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              support@outlooktonotion.com
+            <a href="mailto:YUVALGAKMAN@Optimosmartwork.onmicrosoft.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              YUVALGAKMAN@Optimosmartwork.onmicrosoft.com
             </a>
           </div>
         </div>

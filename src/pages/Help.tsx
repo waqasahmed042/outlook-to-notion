@@ -66,7 +66,7 @@ const Help = () => (
           <p className="text-sm font-semibold text-primary mb-2">Help & Support</p>
           <h1 className="text-3xl font-bold text-foreground md:text-4xl mb-2">Frequently Asked Questions</h1>
           <p className="text-muted-foreground text-sm mb-10">
-            Can't find what you need? <a href="mailto:support@outlooktonotion.com" className="text-primary hover:underline">Contact support</a>.
+            Can't find what you need? <a href="mailto:YUVALGAKMAN@Optimosmartwork.onmicrosoft.com" className="text-primary hover:underline">Contact support</a>.
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>

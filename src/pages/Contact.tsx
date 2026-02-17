@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 text-sm">
                     <Mail size={16} className="text-primary" />
-                    <span className="text-muted-foreground">support@outlooktonotion.com</span>
+                    <span className="text-muted-foreground">YUVALGAKMAN@Optimosmartwork.onmicrosoft.com</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <Clock size={16} className="text-primary" />

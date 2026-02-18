@@ -20,8 +20,8 @@ const features = [
   { icon: Eye, title: "Email preview before sending" },
   { icon: Paperclip, title: "Attachment support" },
   { icon: RefreshCw, title: "Auto-sync email fields" },
-  { icon: Layers, title: "Multiple database support" },
-  { icon: PanelRight, title: "Outlook sidebar integration" },
+  { icon: PanelRight, title: "Manual Selections" },
+  { icon: Layers, title: "Multiple database support" }
 ];
 
 const flowSteps = [
@@ -30,7 +30,8 @@ const flowSteps = [
   "Map database properties",
   "Setup complete",
   "Preview emails",
-  "Send to Notion from Outlook sidebar",
+  "Manual Selections (If you want)",
+  "Send to Notion from Outlook"
 ];
 
 const useCases = [

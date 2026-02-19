@@ -57,19 +57,19 @@ const Index = () => (
               Send Emails from Outlook to Notion{" "}
               <span className="gradient-text">in One Click</span>
             </h1>
-            <p className="mt-5 text-lg text-muted-foreground max-w-md leading-relaxed">
+            <p className="mt-5 text-sm text-muted-foreground max-w-md leading-relaxed">
               Turn emails into organized Notion database entries instantly.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/"
-                className="gradient-primary inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:opacity-90 hover:shadow-xl hover:shadow-primary/25"
+                className="gradient-primary inline-flex cursor-pointer items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:opacity-90 hover:shadow-xl hover:shadow-primary/25"
               >
                 Connect to Notion <ArrowRight size={16} />
               </Link>
               <a
                 href="#how-it-works"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
+                className="inline-flex items-center cursor-pointer gap-2 rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
               >
                 Learn More
               </a>

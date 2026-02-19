@@ -7,7 +7,8 @@ import outlook_to_notion from "@/assets/outlook-to-notion.png";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/privacy", label: "Privacy & Security" },
+  { to: "/services", label: "Services" },
+  { to: "/privacy", label: "Privacy" },
   { to: "/help", label: "Help" },
   { to: "/contact", label: "Contact" },
 ];
@@ -38,12 +39,12 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
-          <Link
+          {/* <Link
             to="/"
             className="ml-3 gradient-primary rounded-lg px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             Connect to Notion
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile toggle */}
@@ -74,13 +75,13 @@ const Navbar = () => {
                   {l.label}
                 </Link>
               ))}
-              <Link
+              {/* <Link
                 to="/"
                 onClick={() => setOpen(false)}
                 className="mt-2 gradient-primary rounded-lg px-4 py-2 text-sm font-medium text-primary-foreground text-center"
               >
                 Connect to Notion
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         )}

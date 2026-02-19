@@ -42,10 +42,6 @@ const Terms = () => (
             <p>
               We reserve the right to update these terms at any time. Continued use of the Service after changes constitutes acceptance of the updated terms.
             </p>
-
-            <p className="text-xs text-text-tertiary pt-4 border-t border-border">
-              Last updated: February 2026
-            </p>
           </div>
         </FadeIn>
       </div>

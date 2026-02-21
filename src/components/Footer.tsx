@@ -20,7 +20,7 @@ const Footer = () => (
           <div className="flex flex-col gap-2">
             <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Home</Link>
             <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
-            <Link to="/help" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Help & Support</Link>
+            <Link to="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">services</Link>
           </div>
         </div>
 
@@ -28,6 +28,7 @@ const Footer = () => (
           <h4 className="font-medium text-foreground mb-3 text-sm">Legal</h4>
           <div className="flex flex-col gap-2">
             <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy & Security</Link>
+            <Link to="/help" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Help & Support</Link>
             <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link>
           </div>
         </div>

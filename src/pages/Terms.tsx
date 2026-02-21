@@ -71,9 +71,6 @@ const Terms = () => {
                             <h1 className="text-4xl font-bold text-foreground mb-4">
                                 End User License Agreement (EULA)
                             </h1>
-                            <p className="text-muted-foreground">
-                                <strong>Effective Date:</strong> [Insert Date]
-                            </p>
                             <p className="text-muted-foreground mt-2 leading-relaxed">
                                 This End User License Agreement ("Agreement") is a legal agreement between you ("User") and the developer of <strong>Outlook to Notion</strong> regarding your use of the Outlook to Notion add-in for Microsoft Outlook. By installing or using the Software, you agree to be bound by the terms of this Agreement.
                             </p>

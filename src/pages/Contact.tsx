@@ -1,19 +1,8 @@
 import Layout from "@/components/Layout";
 import FadeIn from "@/components/FadeIn";
-import { useState } from "react";
-import { Mail, Clock, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Mail, Clock } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({ title: "Message sent!", description: "We'll get back to you within 24 hours." });
-    setForm({ name: "", email: "", subject: "", message: "" });
-  };
-
   return (
     <Layout>
       <section className="py-20 md:py-28">
@@ -33,7 +22,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <Clock size={16} className="text-primary" />
-                    <span className="text-muted-foreground">Response within 24 hours</span>
+                    <span className="text-muted-foreground">Response within 1–2 business days</span>
                   </div>
                 </div>
               </FadeIn>
@@ -41,62 +30,25 @@ const Contact = () => {
 
             <div className="md:col-span-3">
               <FadeIn delay={0.1}>
-                <form onSubmit={handleSubmit} className="rounded-2xl border border-border bg-card p-8 shadow-card space-y-5">
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-1.5">Name</label>
-                      <input
-                        required
-                        maxLength={100}
-                        value={form.name}
-                        onChange={(e) => setForm({ ...form, name: e.target.value })}
-                        className="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-1.5">Email</label>
-                      <input
-                        required
-                        type="email"
-                        maxLength={255}
-                        value={form.email}
-                        onChange={(e) => setForm({ ...form, email: e.target.value })}
-                        className="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                        placeholder="you@company.com"
-                      />
-                    </div>
+                <div className="flex flex-col items-center justify-center rounded-2xl border border-purple-200 bg-white/50 p-10 text-center shadow-sm backdrop-blur-sm">
+                  <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-purple-600/10">
+                    <Mail className="h-10 w-10 text-purple-600" />
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Subject</label>
-                    <input
-                      required
-                      maxLength={200}
-                      value={form.subject}
-                      onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                      className="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                      placeholder="How can we help?"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5">Message</label>
-                    <textarea
-                      required
-                      maxLength={1000}
-                      rows={4}
-                      value={form.message}
-                      onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      className="w-full rounded-lg border border-input bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                      placeholder="Your message..."
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="gradient-primary inline-flex items-center gap-2 rounded-xl px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+
+                  <h3 className="mb-3 text-2xl font-semibold text-gray-900">Email Us</h3>
+
+                  <p className="mb-8 text-gray-600">
+                    We typically respond within 1–2 business days.
+                  </p>
+
+                  <a
+                    href="mailto:YUVALGAKMAN@Optimosmartwork.onmicrosoft.com"
+                    className="inline-flex items-center gap-2.5 rounded-xl bg-purple-600 px-8 py-4 text-base font-medium text-white shadow-md transition-all hover:bg-purple-700 hover:shadow-lg active:scale-[0.98]"
                   >
-                    Send Message <Send size={16} />
-                  </button>
-                </form>
+                    <Mail className="h-5 w-5" />
+                    YUVALGAKMAN@Optimosmartwork.onmicrosoft.com
+                  </a>
+                </div>
               </FadeIn>
             </div>
           </div>

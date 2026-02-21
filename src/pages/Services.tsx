@@ -1,13 +1,13 @@
 import Layout from "@/components/Layout";
 import FadeIn from "@/components/FadeIn";
 
-const Terms = () => (
+const Services = () => (
   <Layout>
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4 max-w-3xl">
         <FadeIn>
           <p className="text-sm font-semibold text-primary mb-2">Legal</p>
-          <h1 className="text-3xl font-bold text-foreground md:text-4xl mb-6">Terms of Service</h1>
+          <h1 className="text-3xl font-bold text-foreground md:text-4xl mb-6">Service</h1>
           <div className="prose prose-sm text-muted-foreground space-y-5 leading-relaxed">
             <p>
               By using the Outlook to Notion add-in ("the Service"), you agree to the following terms.
@@ -49,4 +49,4 @@ const Terms = () => (
   </Layout>
 );
 
-export default Terms;
+export default Services;

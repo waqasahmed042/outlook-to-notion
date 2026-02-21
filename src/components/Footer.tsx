@@ -36,7 +36,7 @@ const Footer = () => (
         <div>
           <h4 className="font-medium text-foreground mb-3 text-sm">Contact</h4>
           <div className="flex flex-col gap-2">
-            <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Form</Link>
+            <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Us</Link>
             <a href="mailto:YUVALGAKMAN@Optimosmartwork.onmicrosoft.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               YUVALGAKMAN@Optimosmartwork.<br />
               onmicrosoft.com
